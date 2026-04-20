@@ -63,8 +63,9 @@ function showPage(pageId) {
 }
 
 function startTyping() {
-  const text = `Seoul, Korea
-서울시 종로구 자하문로33가길 29-9, 1F
+  const text = `universe, earth, korea
+서울시 종로구 자하문로33가길 29-9, 
+1F
 29-9, Jahamun-ro 33ga-gil, Jongno-gu, Seoul-city`;
 
   const el = document.getElementById("typing");
@@ -80,7 +81,7 @@ function startTyping() {
         el.innerHTML += text.charAt(i);
       }
       i++;
-      setTimeout(type, 45);
+      setTimeout(type, 80);
     } else {
       // 🔥 타이핑 끝나면 링크 추가
       el.innerHTML += `
