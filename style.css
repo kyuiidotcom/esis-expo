@@ -145,3 +145,24 @@ img:hover {
   opacity: 0.4;
   z-index: 10;
 }
+
+#info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+#typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
