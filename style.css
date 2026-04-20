@@ -166,3 +166,36 @@ img:hover {
   0%,100% { opacity: 0.3; }
   50% { opacity: 1; }
 }
+
+@media (max-width: 768px) {
+
+  .circle {
+    width: 70px;
+    height: 70px;
+    font-size: 9px;
+  }
+
+  .menu {
+    top: auto;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .kyuii {
+    gap: 8px;
+    top: 20px;
+  }
+
+  img {
+    margin: 80px auto;
+    width: 95%;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+}
