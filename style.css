@@ -107,14 +107,6 @@ img:hover {
   filter: none;
 }
 
-/* BIO */
-#bio {
-  position: fixed;
-  bottom: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: blink 3s infinite ease-in-out;
-}
 
 @keyframes blink {
   0%,100% { opacity: 0.4; }
