@@ -193,3 +193,25 @@ img:hover {
   }
 
 }
+
+/* 기존 스타일들 ... */
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+}
+
+/* 🔥 여기 아래에 붙이기 */
+.address-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+}
+
+.address-link:hover {
+  opacity: 1;
+}
