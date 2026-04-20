@@ -130,14 +130,16 @@ img:hover {
 }
 
 /* 링크 */
-.page a {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 2px;
+.page {
+  opacity: 0.15;
+  filter: blur(12px);
+  transform: scale(0.98);
 }
 
-.page a:hover {
-  opacity: 0.6;
+.page.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
 }
 
 /* footer */
