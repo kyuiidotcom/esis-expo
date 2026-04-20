@@ -55,8 +55,8 @@ img:hover {
 
 /* 원 */
 .circle {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 1px solid rgba(255,255,255,0.3);
   display: flex;
