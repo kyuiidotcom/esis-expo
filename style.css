@@ -115,6 +115,14 @@ img:hover {
   filter: blur(0);
 }
 
+.page {
+  pointer-events: none;
+}
+
+.page.active {
+  pointer-events: auto;
+}
+
 /* 링크 */
 .page a {
   color: white;
