@@ -63,11 +63,13 @@ function showPage(pageId) {
 }
 
 function startTyping() {
-  const text = "Seoul, Korea\n서울시 종로구 자하문로33가길 29-9, 1F / 
-29-9, Jahamun-ro 33ga-gil, Jongno-gu, Seoul-city";
-  const el = document.getElementById("typing");
+  const text = `Seoul, Korea
+서울시 종로구 자하문로33가길 29-9, 1F
+29-9, Jahamun-ro 33ga-gil, Jongno-gu, Seoul-city`;
 
+  const el = document.getElementById("typing");
   el.innerHTML = "";
+
   let i = 0;
 
   function type() {
@@ -78,7 +80,17 @@ function startTyping() {
         el.innerHTML += text.charAt(i);
       }
       i++;
-      setTimeout(type, 45); // 속도 (느리게 하고 싶으면 70)
+      setTimeout(type, 45);
+    } else {
+      // 🔥 타이핑 끝나면 링크 추가
+      el.innerHTML += `
+        <br><br>
+        <a href="https://maps.google.com/?q=서울시 종로구 자하문로33가길 29-9"
+           target="_blank"
+           class="address-link">
+           VIEW MAP
+        </a>
+      `;
     }
   }
 
