@@ -130,6 +130,11 @@ img:hover {
   opacity: 0.6;
 }
 
+/* 🔥 INFO만 블러 예외 */
+#info {
+  filter: none !important;
+}
+
 /* footer */
 .footer {
   position: fixed;
