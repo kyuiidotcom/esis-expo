@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+    input {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<input type="password" id="pw" placeholder="enter password" onkeydown="check(event)">
+
+<script>
+function check(e) {
+  if (e.key === "Enter") {
+    if (document.getElementById("pw").value === "kyuii202604") {
+      window.location.href = "main.html";
+    } else {
+      alert("wrong password");
+    }
+  }
+}
+</script>
+
+</body>
+</html>
