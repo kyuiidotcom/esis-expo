@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kyuii</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- KYUII -->
+<div class="kyuii">
+  <div class="circle">K</div>
+  <div class="circle">Y</div>
+  <div class="circle">U</div>
+  <div class="circle">I</div>
+  <div class="circle">I</div>
+</div>
+
+<!-- 메뉴 -->
+<div class="menu">
+  <a href="#" onclick="showPage('work')" class="circle">WORK</a>
+  <a href="#" onclick="showPage('bio')" class="circle">BIO</a>
+  <a href="#" onclick="showPage('links')" class="circle">LINK</a>
+</div>
+
+<!-- 콘텐츠 -->
+<div class="content">
+
+  <!-- WORK -->
+  <div id="work" class="page active">
+    <img src="images/01.jpg">
+    <img src="images/02.jpg">
+    <img src="images/03.jpg">
+    <img src="images/05.jpg">
+  </div>
+
+  <!-- BIO -->
+  <div id="bio" class="page">
+    <p>Kyuii</p>
+    <p>Artist</p>
+    <p>2025 — Solo Exhibition</p>
+    <p>2024 — Collaboration</p>
+  </div>
+
+  <!-- LINKS -->
+  <div id="links" class="page">
+    <p><a href="https://www.einsteininseoul.kr/" target="_blank">Einstein in Seoul</a></p>
+    <p><a href="https://smartstore.naver.com/dol82must/products/13147462867" target="_blank">Shop</a></p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  Kyuii © 2026
+</div>
+
+<!-- JS -->
+<script>
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => {
+    p.classList.remove('active');
+  });
+  document.getElementById(pageId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
