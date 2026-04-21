@@ -42,17 +42,9 @@
     <p><a href="https://smartstore.naver.com/dol82must/products/13147462867" target="_blank">dolbag001</a></p>
   </div>
 
- <div id="info" class="page">
-
-  <!-- 🔒 비밀번호 입력 -->
-  <div id="pwBox">
-    <input type="password" id="pw" placeholder="enter password" onkeydown="checkPw(event)">
-  </div>
-
-  <!-- 📍 주소 영역 (처음엔 숨김) -->
-  <div id="addressBox" style="display:none;">
-    <p id="typing"></p>
-  </div>
+  <div id="info" class="page">
+  <p id="typing"></p>
+</div>
 
 </div>
 
@@ -62,21 +54,15 @@
 </div>
 
 <script>
-function checkPw(e) {
-  if (e.key === "Enter") {
-    const input = document.getElementById("pw").value;
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => {
+    p.classList.remove('active');
+  });
 
-    if (input === "kyuii2026") {
+  document.getElementById(pageId).classList.add('active');
 
-      // 🔥 비번창 숨기고 주소 보여줌
-      document.getElementById("pwBox").style.display = "none";
-      document.getElementById("addressBox").style.display = "block";
-
-      startTyping();
-
-    } else {
-      alert("wrong password");
-    }
+  if (pageId === 'info') {
+    startTyping();
   }
 }
 
